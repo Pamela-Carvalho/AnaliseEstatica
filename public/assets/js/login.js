@@ -6,7 +6,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 });
 
 function login(tipo) {
-    if (tipo == 1) {
+    if (tipo === 1) {
         document.getElementById("logon").classList.add("d-none");
         document.getElementById("signup").classList.remove("d-none");
     } else {
@@ -36,7 +36,7 @@ btnlogin.addEventListener("click", function () {
     let inputlogin = document.querySelector("#passwordLogin");
     let eyelogin = document.querySelector("#eyeLogin");
 
-    if (inputlogin.getAttribute("type") == "password") {
+    if (inputlogin.getAttribute("type") === "password") {
         inputlogin.setAttribute("type", "text");
         eyelogin.classList.add("icon-eye");
         eyelogin.classList.remove("icon-eye-off");
