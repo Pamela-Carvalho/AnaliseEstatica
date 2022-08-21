@@ -15,8 +15,8 @@ function login(tipo) {
     }
 }
 
-let btn = document.querySelector("#showPass");
-btn.addEventListener("click", function () {
+const btn = document.querySelector("#showPass");
+btn.addEventListener("click", () => {
     let input = document.querySelector("#passwordSignup");
     let eye = document.querySelector("#eye");
 
@@ -31,8 +31,8 @@ btn.addEventListener("click", function () {
     }
 });
 
-let btnlogin = document.querySelector("#showPassLogin");
-btnlogin.addEventListener("click", function () {
+const btnlogin = document.querySelector("#showPassLogin");
+btnlogin.addEventListener("click", () => {
     let inputlogin = document.querySelector("#passwordLogin");
     let eyelogin = document.querySelector("#eyeLogin");
 
