@@ -37,12 +37,13 @@ function closeModal() {
 
 // TextArea resize
 const textarea = document.querySelector("#floating-bio");
-textarea.addEventListener("input", autoResize, false);
 
 function autoResize() {
     if (textarea.scrollHeight == 0) {
         textarea.style.height = "auto";
     } else textarea.style.height = textarea.scrollHeight + "px";
 }
+
+textarea.addEventListener("input", autoResize, false);
 
 autoResize();
