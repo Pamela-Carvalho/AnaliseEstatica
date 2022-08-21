@@ -97,10 +97,10 @@ class TouristSpotController extends Controller
      * @param  \App\Models\touristSpot  $touristSpot
      * @return \Illuminate\Http\Response
      */
-    public function edit(touristSpot $touristSpot)
-    {
-        //
-    }
+    // public function edit(touristSpot $touristSpot)
+    // {
+    //     //
+    // }
 
     /**
      * Update the specified resource in storage.
@@ -109,10 +109,10 @@ class TouristSpotController extends Controller
      * @param  \App\Models\touristSpot  $touristSpot
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, touristSpot $touristSpot)
-    {
-        //
-    }
+    // public function update(Request $request, touristSpot $touristSpot)
+    // {
+    //     //
+    // }
 
     /**
      * Remove the specified resource from storage.
@@ -120,8 +120,8 @@ class TouristSpotController extends Controller
      * @param  \App\Models\touristSpot  $touristSpot
      * @return \Illuminate\Http\Response
      */
-    public function destroy(touristSpot $touristSpot)
-    {
-        //
-    }
+    // public function destroy(touristSpot $touristSpot)
+    // {
+    //     //
+    // }
 }

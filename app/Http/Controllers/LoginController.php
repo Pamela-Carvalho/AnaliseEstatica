@@ -57,10 +57,6 @@ class LoginController extends Controller
         $user = new User;
         $user = $user->where('email', $request->email)->first();
 
-        // $findUser = DB::table('usuario')
-        //     ->where('email', $request->email)
-        //     ->first();
-
         if(!empty($user)) {
             $user->recuperar_senha = bcrypt($user->id_usuario . date("Y-m-d H:i:s"));
             $user->recuperar_senha = str_replace('/', '', $user->recuperar_senha);

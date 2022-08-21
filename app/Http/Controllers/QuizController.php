@@ -43,10 +43,10 @@ class QuizController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        echo 'enviou';
-    }
+    // public function create()
+    // {
+    //     echo 'enviou';
+    // }
 
     /**
      * Store a newly created resource in storage.
@@ -99,10 +99,10 @@ class QuizController extends Controller
      * @param  \App\Models\quiz  $quiz
      * @return \Illuminate\Http\Response
      */
-    public function show(quiz $quiz)
-    {
-        //
-    }
+    // public function show(quiz $quiz)
+    // {
+    //     //
+    // }
 
     /**
      * Show the form for editing the specified resource.
@@ -110,10 +110,10 @@ class QuizController extends Controller
      * @param  \App\Models\quiz  $quiz
      * @return \Illuminate\Http\Response
      */
-    public function edit(quiz $quiz)
-    {
-        //
-    }
+    // public function edit(quiz $quiz)
+    // {
+    //     //
+    // }
 
     /**
      * Update the specified resource in storage.
@@ -122,10 +122,10 @@ class QuizController extends Controller
      * @param  \App\Models\quiz  $quiz
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, quiz $quiz)
-    {
-        //
-    }
+    // public function update(Request $request, quiz $quiz)
+    // {
+    //     //
+    // }
 
     /**
      * Remove the specified resource from storage.
@@ -133,15 +133,15 @@ class QuizController extends Controller
      * @param  \App\Models\quiz  $quiz
      * @return \Illuminate\Http\Response
      */
-    public function destroy(quiz $quiz)
-    {
-        //
-    }
+    // public function destroy(quiz $quiz)
+    // {
+    //     //
+    // }
 
-    public function boot()
-    {
-			Pluralizer::useLanguage('english');
+    // public function boot()
+    // {
+	// 		Pluralizer::useLanguage('english');
 			
-			// ...
-    }
+	// 		// ...
+    // }
 }

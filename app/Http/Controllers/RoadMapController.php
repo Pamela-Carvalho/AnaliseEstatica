@@ -62,10 +62,10 @@ class RoadMapController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
+    // public function create()
+    // {
+    //     //
+    // }
 
     /**
      * Store a newly created resource in storage.
@@ -73,10 +73,10 @@ class RoadMapController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
-    }
+    // public function store(Request $request)
+    // {
+    //     //
+    // }
 
     /**
      * Display the specified resource.
@@ -84,10 +84,10 @@ class RoadMapController extends Controller
      * @param  \App\Models\roadMap  $roadMap
      * @return \Illuminate\Http\Response
      */
-    public function show(roadMap $roadMap)
-    {
-        //
-    }
+    // public function show(roadMap $roadMap)
+    // {
+    //     //
+    // }
 
     /**
      * Show the form for editing the specified resource.
@@ -95,10 +95,10 @@ class RoadMapController extends Controller
      * @param  \App\Models\roadMap  $roadMap
      * @return \Illuminate\Http\Response
      */
-    public function edit(roadMap $roadMap)
-    {
-        //
-    }
+    // public function edit(roadMap $roadMap)
+    // {
+    //     //
+    // }
 
     /**
      * Update the specified resource in storage.
@@ -107,10 +107,10 @@ class RoadMapController extends Controller
      * @param  \App\Models\roadMap  $roadMap
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, roadMap $roadMap)
-    {
-        //
-    }
+    // public function update(Request $request, roadMap $roadMap)
+    // {
+    //     //
+    // }
 
     /**
      * Remove the specified resource from storage.
@@ -118,10 +118,10 @@ class RoadMapController extends Controller
      * @param  \App\Models\roadMap  $roadMap
      * @return \Illuminate\Http\Response
      */
-    public function destroy(roadMap $roadMap)
-    {
-        //
-    }
+    // public function destroy(roadMap $roadMap)
+    // {
+    //     //
+    // }
 
     public function calculatePersonalityByCookies()
     {

@@ -55,10 +55,10 @@ class ExploreController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
+    // public function create()
+    // {
+    //     //
+    // }
 
     /**
      * Store a newly created resource in storage.
@@ -66,10 +66,10 @@ class ExploreController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
-    }
+    // public function store(Request $request)
+    // {
+    //     //
+    // }
 
     /**
      * Display the specified resource.
@@ -77,10 +77,10 @@ class ExploreController extends Controller
      * @param  \App\Models\explore  $explore
      * @return \Illuminate\Http\Response
      */
-    public function show(explore $explore)
-    {
-        //
-    }
+    // public function show(explore $explore)
+    // {
+    //     //
+    // }
 
     /**
      * Show the form for editing the specified resource.
@@ -88,10 +88,10 @@ class ExploreController extends Controller
      * @param  \App\Models\explore  $explore
      * @return \Illuminate\Http\Response
      */
-    public function edit(explore $explore)
-    {
-        //
-    }
+    // public function edit(explore $explore)
+    // {
+    //     //
+    // }
 
     /**
      * Update the specified resource in storage.
@@ -100,10 +100,10 @@ class ExploreController extends Controller
      * @param  \App\Models\explore  $explore
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, explore $explore)
-    {
-        //
-    }
+    // public function update(Request $request, explore $explore)
+    // {
+    //     //
+    // }
 
     /**
      * Remove the specified resource from storage.
@@ -111,8 +111,8 @@ class ExploreController extends Controller
      * @param  \App\Models\explore  $explore
      * @return \Illuminate\Http\Response
      */
-    public function destroy(explore $explore)
-    {
-        //
-    }
+    // public function destroy(explore $explore)
+    // {
+    //     //
+    // }
 }

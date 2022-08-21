@@ -46,10 +46,10 @@ class EventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
+    // public function create()
+    // {
+    //     //
+    // }
 
     /**
      * Store a newly created resource in storage.
@@ -92,10 +92,10 @@ class EventController extends Controller
      * @param  \App\Models\event  $event
      * @return \Illuminate\Http\Response
      */
-    public function show(event $event)
-    {
-        //
-    }
+    // public function show(event $event)
+    // {
+    //     //
+    // }
 
     /**
      * Show the form for editing the specified resource.
@@ -103,10 +103,10 @@ class EventController extends Controller
      * @param  \App\Models\event  $event
      * @return \Illuminate\Http\Response
      */
-    public function edit(event $event)
-    {
-        //
-    }
+    // public function edit(event $event)
+    // {
+    //     //
+    // }
 
     /**
      * Update the specified resource in storage.
@@ -115,10 +115,10 @@ class EventController extends Controller
      * @param  \App\Models\event  $event
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, event $event)
-    {
-        //
-    }
+    // public function update(Request $request, event $event)
+    // {
+    //     //
+    // }
 
     /**
      * Remove the specified resource from storage.
@@ -126,26 +126,26 @@ class EventController extends Controller
      * @param  \App\Models\event  $event
      * @return \Illuminate\Http\Response
      */
-    public function destroy(event $event)
-    {
-        //
-    }
+    // public function destroy(event $event)
+    // {
+    //     //
+    // }
 
-    public function deleteEventByExpirationDate()
-    {
-			$events = DB::table('eventos')->get();
+    // public function deleteEventByExpirationDate()
+    // {
+	// 		$events = DB::table('eventos')->get();
 			
-			setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
-			date_default_timezone_set('America/Sao_Paulo');
+	// 		setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
+	// 		date_default_timezone_set('America/Sao_Paulo');
 		
-			$now = now();
+	// 		$now = now();
 			
-			$date2 = Carbon::createFromFormat('Y-m-d', '2022-06-26');
-			foreach ($events as $event) {
-				$date1 = Carbon::createFromFormat('Y-m-d', $event->data_evento);
-				$result = $date1->eq($date2);
-			}
-			dd($result);
+	// 		$date2 = Carbon::createFromFormat('Y-m-d', '2022-06-26');
+	// 		foreach ($events as $event) {
+	// 			$date1 = Carbon::createFromFormat('Y-m-d', $event->data_evento);
+	// 			$result = $date1->eq($date2);
+	// 		}
+	// 		dd($result);
 
-    }
+    // }
 }

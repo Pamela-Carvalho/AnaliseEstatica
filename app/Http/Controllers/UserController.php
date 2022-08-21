@@ -45,10 +45,10 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
+    // public function create()
+    // {
+    //     //
+    // }
 
     /**
      * Store a newly created resource in storage.
@@ -110,7 +110,7 @@ class UserController extends Controller
             //     Auth::loginUsingId($findUser->id_usuario);
             // }
         }
-        // return redirect()->route('login', app()->getLocale());
+        return redirect()->route('login', app()->getLocale());
     }
 
     /**
@@ -119,10 +119,10 @@ class UserController extends Controller
      * @param  \App\Models\user  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(user $user)
-    {
-        //
-    }
+    // public function show(user $user)
+    // {
+    //     //
+    // }
 
     /**
      * Show the form for editing the specified resource.
@@ -130,10 +130,10 @@ class UserController extends Controller
      * @param  \App\Models\user  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(user $user)
-    {
-        //
-    }
+    // public function edit(user $user)
+    // {
+    //     //
+    // }
 
     /**
      * Update the specified resource in storage.
@@ -142,10 +142,10 @@ class UserController extends Controller
      * @param  \App\Models\user  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, user $user)
-    {
-        //
-    }
+    // public function update(Request $request, user $user)
+    // {
+    //     //
+    // }
 
     /**
      * Remove the specified resource from storage.
@@ -153,10 +153,10 @@ class UserController extends Controller
      * @param  \App\Models\user  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(user $user)
-    {
-        //
-    }
+    // public function destroy(user $user)
+    // {
+    //     //
+    // }
 
     public function login()
     {
@@ -179,13 +179,13 @@ class UserController extends Controller
             return true;
     }
 
-    public function validatePassword($password)
-    {
-        // if((strlen($password) >= 8) && (filter_var($password, FILTER_SANITIZE_NUMBER_INT) == true))
-        $pattern = '/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d].\S{8,36}$/';
+    // public function validatePassword($password)
+    // {
+    //     // if((strlen($password) >= 8) && (filter_var($password, FILTER_SANITIZE_NUMBER_INT) == true))
+    //     $pattern = '/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d].\S{8,36}$/';
 
-        return preg_match($pattern, $password) ? true : false;
-    }
+    //     return preg_match($pattern, $password) ? true : false;
+    // }
 
     public function emailConfirmation($language, $key = null)
     {
@@ -230,10 +230,6 @@ class UserController extends Controller
     public function emailConfirmationFail()
     {
         return view('emailConfirmation');
-    }
-
-    public function registerLogin()
-    {
     }
 
     public function crop(Request $request)

@@ -47,10 +47,10 @@ class FeedController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
+    // public function create()
+    // {
+    //     //
+    // }
 
     /**
      * Store a newly created resource in storage.
@@ -58,10 +58,10 @@ class FeedController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
-    }
+    // public function store(Request $request)
+    // {
+    //     //
+    // }
 
     /**
      * Display the specified resource.
@@ -69,10 +69,10 @@ class FeedController extends Controller
      * @param  \App\Models\feed  $feed
      * @return \Illuminate\Http\Response
      */
-    public function show(feed $feed)
-    {
-        //
-    }
+    // public function show(feed $feed)
+    // {
+    //     //
+    // }
 
     /**
      * Show the form for editing the specified resource.
@@ -80,10 +80,10 @@ class FeedController extends Controller
      * @param  \App\Models\feed  $feed
      * @return \Illuminate\Http\Response
      */
-    public function edit(feed $feed)
-    {
-        //
-    }
+    // public function edit(feed $feed)
+    // {
+    //     //
+    // }
 
     /**
      * Update the specified resource in storage.
@@ -92,10 +92,10 @@ class FeedController extends Controller
      * @param  \App\Models\feed  $feed
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, feed $feed)
-    {
-        //
-    }
+    // public function update(Request $request, feed $feed)
+    // {
+    //     //
+    // }
 
     /**
      * Remove the specified resource from storage.
@@ -103,8 +103,8 @@ class FeedController extends Controller
      * @param  \App\Models\feed  $feed
      * @return \Illuminate\Http\Response
      */
-    public function destroy(feed $feed)
-    {
-        //
-    }
+    // public function destroy(feed $feed)
+    // {
+    //     //
+    // }
 }

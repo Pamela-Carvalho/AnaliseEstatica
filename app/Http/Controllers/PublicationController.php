@@ -14,20 +14,20 @@ class PublicationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        //
-    }
+    // public function index()
+    // {
+    //     //
+    // }
 
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
+    // public function create()
+    // {
+    //     //
+    // }
 
     /**
      * Store a newly created resource in storage.
@@ -59,10 +59,10 @@ class PublicationController extends Controller
      * @param  \App\Models\publication  $publication
      * @return \Illuminate\Http\Response
      */
-    public function show(publication $publication)
-    {
-        //
-    }
+    // public function show(publication $publication)
+    // {
+    //     //
+    // }
 
     /**
      * Show the form for editing the specified resource.
@@ -70,10 +70,10 @@ class PublicationController extends Controller
      * @param  \App\Models\publication  $publication
      * @return \Illuminate\Http\Response
      */
-    public function edit(publication $publication)
-    {
-        //
-    }
+    // public function edit(publication $publication)
+    // {
+    //     //
+    // }
 
     /**
      * Update the specified resource in storage.
@@ -82,10 +82,10 @@ class PublicationController extends Controller
      * @param  \App\Models\publication  $publication
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, publication $publication)
-    {
-        //
-    }
+    // public function update(Request $request, publication $publication)
+    // {
+    //     //
+    // }
 
     /**
      * Remove the specified resource from storage.
