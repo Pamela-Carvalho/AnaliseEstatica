@@ -39,7 +39,7 @@ btn_submit_form.addEventListener("click", (event) => {
         empty.map((element) => {
             mensagem += map_questions[element] + " ";
         });
-        console.log(mensagem + "estão incompletas, favor preencher");
+        // console.log(mensagem + "estão incompletas, favor preencher");
     } else {
         form.submit();
     }
