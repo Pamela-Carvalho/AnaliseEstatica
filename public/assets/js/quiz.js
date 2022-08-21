@@ -23,7 +23,7 @@ const map_questions = {
 // verification if all fields of form is not empty
 btn_submit_form.addEventListener("click", (event) => {
     event.preventDefault();
-    let empty = [];
+    const empty = [];
     $(":radio").each(function () {
         const name = $(this).attr("name");
         // if (submit && !$(':radio[name="' + name + '"]:checked').length) {
@@ -70,8 +70,8 @@ function disabledQuizButton() {
 let last_question = 1;
 
 function markAnswered(index) {
-    let alternative = document.getElementsByName(`question-${index}`);
-    let btn_question = document.getElementById(`btn-question-${index}`);
+    const alternative = document.getElementsByName(`question-${index}`);
+    const btn_question = document.getElementById(`btn-question-${index}`);
     let check = false;
 
     for (let i = 0; i < alternative.length; i++) {
@@ -89,8 +89,8 @@ function markAnswered(index) {
 
 // show selected question and updated index
 function switchQuestion(index) {
-    let question = document.getElementById(`question-${index}`);
-    let btn_question = document.getElementById(`btn-question-${index}`);
+    const question = document.getElementById(`question-${index}`);
+    const btn_question = document.getElementById(`btn-question-${index}`);
 
     hideQuestions();
     disabledQuizButton();

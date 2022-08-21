@@ -17,8 +17,8 @@ function login(tipo) {
 
 const btn = document.querySelector("#showPass");
 btn.addEventListener("click", () => {
-    let input = document.querySelector("#passwordSignup");
-    let eye = document.querySelector("#eye");
+    const input = document.querySelector("#passwordSignup");
+    const eye = document.querySelector("#eye");
 
     if (input.getAttribute("type") === "password") {
         input.setAttribute("type", "text");
