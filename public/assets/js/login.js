@@ -20,7 +20,7 @@ btn.addEventListener("click", function () {
     let input = document.querySelector("#passwordSignup");
     let eye = document.querySelector("#eye");
 
-    if (input.getAttribute("type") == "password") {
+    if (input.getAttribute("type") === "password") {
         input.setAttribute("type", "text");
         eye.classList.add("icon-eye");
         eye.classList.remove("icon-eye-off");
