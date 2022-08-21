@@ -1,7 +1,7 @@
 // Menu Dropdown
 document
     .querySelector(".for-dropdown-translate")
-    .addEventListener("click", (event) => {
+    .addEventListener("click", () => {
         if (!document.getElementById("translate").classList.contains("open")) {
             document.getElementById("translate").classList.add("open");
         } else {
