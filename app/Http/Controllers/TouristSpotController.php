@@ -52,7 +52,7 @@ class TouristSpotController extends Controller
      * @param  \App\Models\touristSpot  $touristSpot
      * @return \Illuminate\Http\Response
      */
-    public function show($language, $id = 1, Request $request)
+    public function show(Request $request, $language, $id = 1)
     {
         Auth::user();
         
