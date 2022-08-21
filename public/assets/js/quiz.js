@@ -38,8 +38,8 @@ btn_submit_form.addEventListener("click", (event) => {
         let mensagem = "As questões: ";
         empty.map((element) => {
             mensagem += map_questions[element] + " ";
+            return;
         });
-        return;
         // console.log(mensagem + "estão incompletas, favor preencher");
     } else {
         form.submit();
@@ -48,7 +48,7 @@ btn_submit_form.addEventListener("click", (event) => {
 
 // QUIZ PAGINATION
 // hide all questions
-var questions = document.querySelectorAll(".question-container");
+const questions = document.querySelectorAll(".question-container");
 
 function hideQuestions() {
     for (let i = 0; i < questions.length; i++) {
@@ -58,7 +58,7 @@ function hideQuestions() {
 }
 
 // disable index button
-var quiz_buttons = document.querySelectorAll(".quiz-button");
+const quiz_buttons = document.querySelectorAll(".quiz-button");
 
 function disabledQuizButton() {
     for (let i = 0; i < quiz_buttons.length; i++) {
@@ -67,12 +67,12 @@ function disabledQuizButton() {
     }
 }
 
-var last_question = 1;
+let last_question = 1;
 
 function markAnswered(index) {
-    var alternative = document.getElementsByName("question-" + index);
-    var btn_question = document.getElementById("btn-question-" + index);
-    var check = false;
+    let alternative = document.getElementsByName("question-" + index);
+    let btn_question = document.getElementById("btn-question-" + index);
+    let check = false;
 
     for (let i = 0; i < alternative.length; i++) {
         if (alternative[i].checked) {
@@ -89,8 +89,8 @@ function markAnswered(index) {
 
 // show selected question and updated index
 function switchQuestion(index) {
-    var question = document.getElementById("question-" + index);
-    var btn_question = document.getElementById("btn-question-" + index);
+    let question = document.getElementById("question-" + index);
+    let btn_question = document.getElementById("btn-question-" + index);
 
     hideQuestions();
     disabledQuizButton();
