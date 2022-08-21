@@ -33,6 +33,8 @@ class RoadMapController extends Controller
                 ->where('id_usuario', Auth::user()->id_usuario)
                 ->get();
                 
+            $roadMap = null;
+                
             foreach($user as $u){
                 $roadMap = $u->fk_classificacao_perfil_roteiro_id_roteiro;
             }
