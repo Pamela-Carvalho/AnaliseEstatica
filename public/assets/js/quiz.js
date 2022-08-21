@@ -27,7 +27,7 @@ btn_submit_form.addEventListener("click", (event) => {
     $(":radio").each(function () {
         const name = $(this).attr("name");
         // if (submit && !$(':radio[name="' + name + '"]:checked').length) {
-        if (!$(':radio[name="' + name + '"]:checked').length) {
+        if (!$(`:radio[name="${name}"]:checked`).length) {
             if (empty.indexOf(name) === -1) {
                 empty.push(name);
             }
@@ -37,7 +37,7 @@ btn_submit_form.addEventListener("click", (event) => {
     if (empty.length) {
         let mensagem = "As questões: ";
         empty.map((element) => {
-            mensagem += map_questions[element] + " ";
+            mensagem += `${map_questions[element]}  `;
             return;
         });
         // console.log(mensagem + "estão incompletas, favor preencher");
@@ -70,8 +70,8 @@ function disabledQuizButton() {
 let last_question = 1;
 
 function markAnswered(index) {
-    let alternative = document.getElementsByName("question-" + index);
-    let btn_question = document.getElementById("btn-question-" + index);
+    let alternative = document.getElementsByName(`question-${index}`);
+    let btn_question = document.getElementById(`btn-question-${index}`);
     let check = false;
 
     for (let i = 0; i < alternative.length; i++) {
@@ -89,8 +89,8 @@ function markAnswered(index) {
 
 // show selected question and updated index
 function switchQuestion(index) {
-    let question = document.getElementById("question-" + index);
-    let btn_question = document.getElementById("btn-question-" + index);
+    let question = document.getElementById(`question-${index}`);
+    let btn_question = document.getElementById(`btn-question-${index}`);
 
     hideQuestions();
     disabledQuizButton();
