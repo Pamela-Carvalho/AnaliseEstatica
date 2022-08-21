@@ -29,7 +29,7 @@ function openModal(modal) {
 }
 
 function closeModal() {
-    let body = document.getElementsByTagName("body")[0];
+    const body = document.getElementsByTagName("body")[0];
     document.querySelectorAll(".modal-backdrop").forEach((e) => {
         body.removeChild(e);
     });

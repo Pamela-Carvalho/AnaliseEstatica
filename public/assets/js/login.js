@@ -33,8 +33,8 @@ btn.addEventListener("click", () => {
 
 const btnlogin = document.querySelector("#showPassLogin");
 btnlogin.addEventListener("click", () => {
-    let inputlogin = document.querySelector("#passwordLogin");
-    let eyelogin = document.querySelector("#eyeLogin");
+    const inputlogin = document.querySelector("#passwordLogin");
+    const eyelogin = document.querySelector("#eyeLogin");
 
     if (inputlogin.getAttribute("type") === "password") {
         inputlogin.setAttribute("type", "text");
